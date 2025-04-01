@@ -1,0 +1,15 @@
+/workspaces/CS690-FinalProject/GoalTracking.Console/obj/Debug/net8.0/GoalTracking.Console.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/CS690-FinalProject/GoalTracking.Console/obj/Debug/net8.0/GoalTracking.Console.AssemblyInfoInputs.cache
+/workspaces/CS690-FinalProject/GoalTracking.Console/obj/Debug/net8.0/GoalTracking.Console.AssemblyInfo.cs
+/workspaces/CS690-FinalProject/GoalTracking.Console/obj/Debug/net8.0/GoalTracking.Console.csproj.CoreCompileInputs.cache
+/workspaces/CS690-FinalProject/GoalTracking.Console/obj/Debug/net8.0/GoalTracking.Console.sourcelink.json
+/workspaces/CS690-FinalProject/GoalTracking.Console/bin/Debug/net8.0/GoalTracking.Console
+/workspaces/CS690-FinalProject/GoalTracking.Console/bin/Debug/net8.0/GoalTracking.Console.deps.json
+/workspaces/CS690-FinalProject/GoalTracking.Console/bin/Debug/net8.0/GoalTracking.Console.runtimeconfig.json
+/workspaces/CS690-FinalProject/GoalTracking.Console/bin/Debug/net8.0/GoalTracking.Console.dll
+/workspaces/CS690-FinalProject/GoalTracking.Console/bin/Debug/net8.0/GoalTracking.Console.pdb
+/workspaces/CS690-FinalProject/GoalTracking.Console/obj/Debug/net8.0/GoalTracking.Console.dll
+/workspaces/CS690-FinalProject/GoalTracking.Console/obj/Debug/net8.0/refint/GoalTracking.Console.dll
+/workspaces/CS690-FinalProject/GoalTracking.Console/obj/Debug/net8.0/GoalTracking.Console.pdb
+/workspaces/CS690-FinalProject/GoalTracking.Console/obj/Debug/net8.0/GoalTracking.Console.genruntimeconfig.cache
+/workspaces/CS690-FinalProject/GoalTracking.Console/obj/Debug/net8.0/ref/GoalTracking.Console.dll

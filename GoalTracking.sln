@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoalTracking.Console", "GoalTracking.Console\GoalTracking.Console.csproj", "{D6DB0B47-0E3C-4472-8117-8511E5BDC761}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoalTracking.Tests", "GoalTracking.Tests\GoalTracking.Tests.csproj", "{22524E80-7C99-4483-9EE3-313B865EBD61}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6DB0B47-0E3C-4472-8117-8511E5BDC761}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6DB0B47-0E3C-4472-8117-8511E5BDC761}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6DB0B47-0E3C-4472-8117-8511E5BDC761}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6DB0B47-0E3C-4472-8117-8511E5BDC761}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13917CD1-54FF-4E6A-AD9B-785DE3941677}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13917CD1-54FF-4E6A-AD9B-785DE3941677}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13917CD1-54FF-4E6A-AD9B-785DE3941677}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13917CD1-54FF-4E6A-AD9B-785DE3941677}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22524E80-7C99-4483-9EE3-313B865EBD61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22524E80-7C99-4483-9EE3-313B865EBD61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22524E80-7C99-4483-9EE3-313B865EBD61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22524E80-7C99-4483-9EE3-313B865EBD61}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
