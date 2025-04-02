@@ -51,7 +51,8 @@ public class Program
             Console.Write("Enter your choice :");
             string choice = Console.ReadLine();
 
-            if (choice == "1")
+        
+             if (choice == "1")
             {
                 AddGoal(goals);
             }
@@ -61,10 +62,10 @@ public class Program
             }
             else
             {
-                Console.WriteLine("Invalid Chouce. Please try again.");
+                Console.WriteLine("Invalid Choice. Please try again.");
             }
         }
-    } 
+    }
     
    static void AddGoal(List<Goal> goals)
     {
