@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GoalTracking.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c2bd08276069d5a1b999a5c7340eceabbeebc7f8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5643984082c14a784d540c4682bf816c2fd57f44")]
 [assembly: System.Reflection.AssemblyProductAttribute("GoalTracking.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GoalTracking.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
