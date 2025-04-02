@@ -49,12 +49,36 @@ public class Program
             Console.WriteLine("4. Exit");
             
             Console.Write("Enter your choice :");
-            )
+            string choice = Console.ReadLine();
+
+            if (choice == "1")
             {
-                
-            }}
-    }
+                AddGoal(goals);
+            }
+            else if (choice == "4")
+            {
+                return;
+            }
+            else
+            {
+                Console.WriteLine("Invalid Chouce. Please try again.");
+            }
+        }
+    } 
     
-      
+   static void AddGoal(List<Goal> goals)
+    {
+        Console.Write("Enter Goal Title: ");
+        string title = Console.ReadLine();
+
+        if (title != null)
+        {
+            goals.Add(new Goal(title));
+            Console.WriteLine($"Goal '{title}' added.");
+        }
+        else
+        {
+            Console.WriteLine("Invalid Title.");
+        }
     }
 }
