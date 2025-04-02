@@ -56,6 +56,14 @@ public class Program
             {
                 AddGoal(goals);
             }
+            else if (choice == "2")
+            {
+                UpdateGoalProgress(goals);
+            }
+            else if (choice == "3")
+            {
+                DisplayGoals(goals);
+            }
             else if (choice == "4")
             {
                 return;
