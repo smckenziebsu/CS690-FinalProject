@@ -60,10 +60,7 @@ public class Program
             {
                 UpdateGoalProgress(goals);
             }
-            else if (choice == "3")
-            {
-                DisplayGoals(goals);
-            }
+          
             else if (choice == "4")
             {
                 return;
@@ -106,9 +103,22 @@ public class Program
         }
 
         Console.Write("Enter goal number: ");
-        if (int.TryParse(Console.ReadLine(), out in goalNumber) && goalNumber <= goals.Count)
+        if (int.TryParse(Console.ReadLine(), out int goalNumber) && goalNumber <= goals.Count)
         {
-            
+            Console.Write("Enter new progress made (0-100): ");
+            if (int.TryParse(Console.ReadLine(), out int progress))
+            {
+                goals[goalNumber - 1].UpdateProgress(progress);
+                Console.WriteLine($"Goal '{goals[goalNumber - 1].Title}' updated."); 
+            }
+            else
+            {
+                Console.WriteLine("Invalid Value.");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Invalid Goal");
         }
 
     }
