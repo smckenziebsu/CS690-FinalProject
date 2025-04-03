@@ -90,4 +90,26 @@ public class Program
             Console.WriteLine("Invalid Title.");
         }
     }
+
+    static void UpdateGoalProgress(List<Goal> goals)
+    {
+        if (goals.Count == 0)
+        {
+            Console.WriteLine("No Goals!");
+            return;
+        }
+
+        Console.WriteLine("Please Select a Goal to Update: ");
+        for (int i = 0; i < goals.Count; i++)
+        {
+            Console.WriteLine($"{i + 1}. {goals[i].Title}");
+        }
+
+        Console.Write("Enter goal number: ");
+        if (int.TryParse(Console.ReadLine(), out in goalNumber) && goalNumber <= goals.Count)
+        {
+            
+        }
+
+    }
 }
