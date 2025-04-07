@@ -60,7 +60,10 @@ public class Program
             {
                 UpdateGoalProgress(goals);
             }
-          
+           else if (choice == "3")
+             {
+                DisplayGoals(goals);
+            }
             else if (choice == "4")
             {
                 return;
@@ -121,5 +124,20 @@ public class Program
             Console.WriteLine("Invalid Goal");
         }
 
+    }
+
+    static void DisplayGoals(List<Goal> goals)
+    {
+        if (goals.Count == 0)
+        {
+            Console.WriteLine("No Goals!");
+            return;
+        }
+
+        Console.WriteLine("Your Goals Are: ");
+        for (int i =0; i <goals.Count; i++)
+        {
+            Console.WriteLine($"- {goals[i]. Title} (Progress: {goals[i].Progress}%)");
+        }
     }
 }
