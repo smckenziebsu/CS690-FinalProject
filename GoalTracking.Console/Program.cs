@@ -140,4 +140,13 @@ public class Program
             Console.WriteLine($"- {goals[i]. Title} (Progress: {goals[i].Progress}%)");
         }
     }
+
+    static void DisplayAward(List<Goal> goals)
+    {
+        string award = GetAward(goals);
+        if (!string.IsNullOrEmpty(award));
+        {
+            Console.WriteLine($"You earned the {award} badge!");
+        }
+    }
 }

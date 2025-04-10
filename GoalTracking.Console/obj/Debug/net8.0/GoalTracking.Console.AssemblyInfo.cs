@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GoalTracking.Console")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d084d1e17e09df75f81580d0f45e39cd8d45135c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7cae06bea5ec99ca183da65f65d2dd8a8603f6ac")]
 [assembly: System.Reflection.AssemblyProductAttribute("GoalTracking.Console")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GoalTracking.Console")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
