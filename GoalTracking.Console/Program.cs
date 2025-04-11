@@ -31,6 +31,8 @@ public class Goal
         {
             Progress = progress;
         }
+
+        Completed = (Progress >= 100);
     }
 }
 
@@ -108,10 +110,10 @@ public class Program
         Console.Write("Enter goal number: ");
         if (int.TryParse(Console.ReadLine(), out int goalNumber) && goalNumber <= goals.Count)
         {
-            Console.Write("Enter new progress made (0-100): ");
+            Console.Write("Enter the percentage of progress made (e.g., 25 for 25%): ");
             if (int.TryParse(Console.ReadLine(), out int progress))
             {
-                goals[goalNumber - 1].UpdateProgress(progress);
+                goals[goalNumber - 1].UpdateProgress(goals[goalNumber - 1].Progress + progress);
                 Console.WriteLine($"Goal '{goals[goalNumber - 1].Title}' updated."); 
             }
             else
@@ -139,14 +141,35 @@ public class Program
         {
             Console.WriteLine($"- {goals[i]. Title} (Progress: {goals[i].Progress}%)");
         }
+        
     }
 
-    static void DisplayAward(List<Goal> goals)
+    static string GetAward(List<Goal> goals)
     {
-        string award = GetAward(goals);
-        if (!string.IsNullOrEmpty(award));
+        int completedGoals = 0;
+        foreach (Goal goal in goals)
         {
-            Console.WriteLine($"You earned the {award} badge!");
+            if (goal.Completed)
+            {
+                completedGoals++;
+            }
+        }
+
+        if (completedGoals >= 5)
+        {
+            return "Gold";
+        }
+        else if (completedGoals >= 3)
+        {
+            return "Silver";
+        }
+        else if (completedGoals >= 1)
+        {
+            return "Bronze";
+        }
+        else
+        {
+            return "";
         }
     }
 }
