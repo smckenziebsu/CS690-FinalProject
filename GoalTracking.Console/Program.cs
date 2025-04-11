@@ -48,7 +48,8 @@ public class Program
             Console.WriteLine("1. Add Goal");
             Console.WriteLine("2. Update Goal Progress");
             Console.WriteLine("3. Display Goals");
-            Console.WriteLine("4. Exit");
+            Console.WriteLine("4. Display Awards");
+            Console.WriteLine("5. Exit");
             
             Console.Write("Enter your choice :");
             string choice = Console.ReadLine();
@@ -67,6 +68,10 @@ public class Program
                 DisplayGoals(goals);
             }
             else if (choice == "4")
+            {
+                DisplayAward(goals);
+            }
+            else if (choice == "5")
             {
                 return;
             }
@@ -142,6 +147,19 @@ public class Program
             Console.WriteLine($"- {goals[i]. Title} (Progress: {goals[i].Progress}%)");
         }
         
+    }
+
+    static void DisplayAward(List<Goal> goals)
+    {
+        string award = GetAward(goals);
+        if (!string.IsNullOrEmpty(award))
+        {
+            Console.WriteLine($"You have earned the {award} badge!");
+        }
+        else
+        {
+            Console.WriteLine("You have not earned an award yet, keep going!");
+        }
     }
 
     static string GetAward(List<Goal> goals)
