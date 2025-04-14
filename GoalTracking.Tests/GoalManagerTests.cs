@@ -16,4 +16,22 @@ public class UnitTest1
         Assert.Single(goals);
         Assert.Equal(goalTitle, goals[0].Title);
     }
+
+    [Fact]
+
+    public void UpdateGoalProgressCorrectly()
+    {
+       
+        Goal goal = new Goal ("Read a book");
+
+        goal.UpdateProgress(50);
+
+        Assert.Equal(50, goal.Progress);
+        Assert.False(goal.Completed);
+
+        goal.UpdateProgress(100);
+
+        Assert.Equal(100, goal.Progress);
+        Assert.True(goal.Completed);
+    }
 }
