@@ -36,53 +36,9 @@ public class Goal
     }
 }
 
-public class Program
+public static class GoalManager
 {
-    public static void Main(string[] args)
-    {
-        List<Goal> goals = new List<Goal>();
-
-        while (true)
-        {
-            Console.WriteLine("Welcome to Goal Tracking!");
-            Console.WriteLine("1. Add Goal");
-            Console.WriteLine("2. Update Goal Progress");
-            Console.WriteLine("3. Display Goals");
-            Console.WriteLine("4. Display Awards");
-            Console.WriteLine("5. Exit");
-            
-            Console.Write("Enter your choice :");
-            string choice = Console.ReadLine();
-
-        
-             if (choice == "1")
-            {
-                AddGoal(goals);
-            }
-            else if (choice == "2")
-            {
-                UpdateGoalProgress(goals);
-            }
-           else if (choice == "3")
-             {
-                DisplayGoals(goals);
-            }
-            else if (choice == "4")
-            {
-                DisplayAward(goals);
-            }
-            else if (choice == "5")
-            {
-                return;
-            }
-            else
-            {
-                Console.WriteLine("Invalid Choice. Please try again.");
-            }
-        }
-    }
-    
-   static void AddGoal(List<Goal> goals)
+    public static void AddGoal(List<Goal> goals)
     {
         Console.Write("Enter Goal Title: ");
         string title = Console.ReadLine();
@@ -98,7 +54,7 @@ public class Program
         }
     }
 
-    static void UpdateGoalProgress(List<Goal> goals)
+    public static void UpdateGoalProgress(List<Goal> goals)
     {
         if (goals.Count == 0)
         {
@@ -133,7 +89,7 @@ public class Program
 
     }
 
-    static void DisplayGoals(List<Goal> goals)
+    public static void DisplayGoals(List<Goal> goals)
     {
         if (goals.Count == 0)
         {
@@ -149,7 +105,7 @@ public class Program
         
     }
 
-    static void DisplayAward(List<Goal> goals)
+     public static void DisplayAward(List<Goal> goals)
     {
         string award = GetAward(goals);
         if (!string.IsNullOrEmpty(award))
@@ -162,7 +118,7 @@ public class Program
         }
     }
 
-    static string GetAward(List<Goal> goals)
+    private static string GetAward(List<Goal> goals)
     {
         int completedGoals = 0;
         foreach (Goal goal in goals)
@@ -190,4 +146,52 @@ public class Program
             return "";
         }
     }
+}
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        List<Goal> goals = new List<Goal>();
+
+        while (true)
+        {
+            Console.WriteLine("Welcome to Goal Tracking!");
+            Console.WriteLine("1. Add Goal");
+            Console.WriteLine("2. Update Goal Progress");
+            Console.WriteLine("3. Display Goals");
+            Console.WriteLine("4. Display Awards");
+            Console.WriteLine("5. Exit");
+            
+            Console.Write("Enter your choice :");
+            string choice = Console.ReadLine();
+
+        
+            if (choice == "1")
+            {
+                GoalManager.AddGoal(goals);
+            }
+            else if (choice == "2")
+            {
+                GoalManager.UpdateGoalProgress(goals);
+            }
+            else if (choice == "3")
+            {
+                GoalManager.DisplayGoals(goals);
+            }
+            else if (choice == "4")
+            {
+                GoalManager.DisplayAward(goals);
+            }
+            else if (choice == "5")
+            {
+                return;
+            }
+            else
+            {
+                Console.WriteLine("Invalid Choice. Please try again.");
+            }
+        }
+    }
+    
 }
