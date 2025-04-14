@@ -38,21 +38,19 @@ public class Goal
 
 public static class GoalManager
 {
-    public static void AddGoal(List<Goal> goals)
+   public static void AddGoal(List<Goal> goals, string title)
+{
+    if (!string.IsNullOrWhiteSpace(title))
     {
-        Console.Write("Enter Goal Title: ");
-        string title = Console.ReadLine();
-
-        if (title != null)
-        {
-            goals.Add(new Goal(title));
-            Console.WriteLine($"Goal '{title}' added.");
-        }
-        else
-        {
-            Console.WriteLine("Invalid Title.");
-        }
+        goals.Add(new Goal(title));
+        Console.WriteLine($"Goal '{title}' added.");
     }
+    else
+    {
+        Console.WriteLine("Invalid Title.");
+    }
+}
+
 
     public static void UpdateGoalProgress(List<Goal> goals)
     {
@@ -169,7 +167,9 @@ public class Program
         
             if (choice == "1")
             {
-                GoalManager.AddGoal(goals);
+                
+                string title = Console.ReadLine();
+                GoalManager.AddGoal(goals, title);
             }
             else if (choice == "2")
             {
@@ -192,6 +192,12 @@ public class Program
                 Console.WriteLine("Invalid Choice. Please try again.");
             }
         }
+    }
+
+    private static string GetGoalTitleFromUser()
+    {
+        Console.Write("Enter Goal Title: ");
+        return Console.ReadLine();
     }
     
 }
