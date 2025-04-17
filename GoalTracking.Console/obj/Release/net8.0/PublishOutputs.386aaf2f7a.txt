@@ -1,0 +1,5 @@
+/workspaces/CS690-FinalProject/publish/GoalTracking.Console
+/workspaces/CS690-FinalProject/publish/GoalTracking.Console.dll
+/workspaces/CS690-FinalProject/publish/GoalTracking.Console.deps.json
+/workspaces/CS690-FinalProject/publish/GoalTracking.Console.runtimeconfig.json
+/workspaces/CS690-FinalProject/publish/GoalTracking.Console.pdb

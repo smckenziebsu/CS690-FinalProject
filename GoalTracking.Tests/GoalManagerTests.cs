@@ -34,4 +34,25 @@ public class UnitTest1
         Assert.Equal(100, goal.Progress);
         Assert.True(goal.Completed);
     }
+
+    [Fact]
+
+    public void UpdateProgressNotMoreThan100()
+    {
+        Goal goal = new Goal ("Run 2 Miles");
+        goal.UpdateProgress(150);
+
+        Assert.Equal (100, goal.Progress);
+        Assert.True(goal.Completed);
+    }
+
+    [Fact]
+
+    public void GoalIsCompleteAt100()
+    {
+        Goal goal = new Goal ("Finish Cooking");
+        goal.UpdateProgress(100);
+
+        Assert.True(goal.Completed);
+    }
 }

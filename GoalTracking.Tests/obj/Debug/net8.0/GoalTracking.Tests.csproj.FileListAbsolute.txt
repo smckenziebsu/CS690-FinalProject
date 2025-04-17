@@ -1,10 +1,4 @@
 /workspaces/CS690-FinalProject/GoalTracking.Tests/bin/Debug/net8.0/CoverletSourceRootsMapping_GoalTracking.Tests
-/workspaces/CS690-FinalProject/GoalTracking.Tests/obj/Debug/net8.0/GoalTracking.Tests.csproj.AssemblyReference.cache
-/workspaces/CS690-FinalProject/GoalTracking.Tests/obj/Debug/net8.0/GoalTracking.Tests.GeneratedMSBuildEditorConfig.editorconfig
-/workspaces/CS690-FinalProject/GoalTracking.Tests/obj/Debug/net8.0/GoalTracking.Tests.AssemblyInfoInputs.cache
-/workspaces/CS690-FinalProject/GoalTracking.Tests/obj/Debug/net8.0/GoalTracking.Tests.AssemblyInfo.cs
-/workspaces/CS690-FinalProject/GoalTracking.Tests/obj/Debug/net8.0/GoalTracking.Tests.csproj.CoreCompileInputs.cache
-/workspaces/CS690-FinalProject/GoalTracking.Tests/obj/Debug/net8.0/GoalTracking.Tests.sourcelink.json
 /workspaces/CS690-FinalProject/GoalTracking.Tests/bin/Debug/net8.0/xunit.abstractions.dll
 /workspaces/CS690-FinalProject/GoalTracking.Tests/bin/Debug/net8.0/GoalTracking.Console.deps.json
 /workspaces/CS690-FinalProject/GoalTracking.Tests/bin/Debug/net8.0/GoalTracking.Console.runtimeconfig.json
@@ -95,6 +89,12 @@
 /workspaces/CS690-FinalProject/GoalTracking.Tests/bin/Debug/net8.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 /workspaces/CS690-FinalProject/GoalTracking.Tests/bin/Debug/net8.0/GoalTracking.Console.dll
 /workspaces/CS690-FinalProject/GoalTracking.Tests/bin/Debug/net8.0/GoalTracking.Console.pdb
+/workspaces/CS690-FinalProject/GoalTracking.Tests/obj/Debug/net8.0/GoalTracking.Tests.csproj.AssemblyReference.cache
+/workspaces/CS690-FinalProject/GoalTracking.Tests/obj/Debug/net8.0/GoalTracking.Tests.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/CS690-FinalProject/GoalTracking.Tests/obj/Debug/net8.0/GoalTracking.Tests.AssemblyInfoInputs.cache
+/workspaces/CS690-FinalProject/GoalTracking.Tests/obj/Debug/net8.0/GoalTracking.Tests.AssemblyInfo.cs
+/workspaces/CS690-FinalProject/GoalTracking.Tests/obj/Debug/net8.0/GoalTracking.Tests.csproj.CoreCompileInputs.cache
+/workspaces/CS690-FinalProject/GoalTracking.Tests/obj/Debug/net8.0/GoalTracking.Tests.sourcelink.json
 /workspaces/CS690-FinalProject/GoalTracking.Tests/obj/Debug/net8.0/GoalTrac.5795ADDE.Up2Date
 /workspaces/CS690-FinalProject/GoalTracking.Tests/obj/Debug/net8.0/GoalTracking.Tests.dll
 /workspaces/CS690-FinalProject/GoalTracking.Tests/obj/Debug/net8.0/refint/GoalTracking.Tests.dll
