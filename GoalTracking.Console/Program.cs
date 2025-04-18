@@ -7,14 +7,11 @@ public class Goal
     public string Title {get; set; }
     public int Progress {get; set; }
     public bool Completed {get; set; }
-    public int Points {get; set; }
-
     public Goal(string title)
     {
         Title = title;
         Progress = 0;
         Completed = false;
-        Points = 0;
     }
 
     public void UpdateProgress(int progress)
@@ -167,7 +164,7 @@ public class Program
         
             if (choice == "1")
             {
-                
+                Console.Write("Enter goal title: ");
                 string title = Console.ReadLine();
                 GoalManager.AddGoal(goals, title);
             }
@@ -192,12 +189,6 @@ public class Program
                 Console.WriteLine("Invalid Choice. Please try again.");
             }
         }
-    }
-
-    private static string GetGoalTitleFromUser()
-    {
-        Console.Write("Enter Goal Title: ");
-        return Console.ReadLine();
     }
     
 }
