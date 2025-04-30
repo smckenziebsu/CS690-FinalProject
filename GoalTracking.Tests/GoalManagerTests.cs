@@ -161,4 +161,18 @@ public void UpdateProgressCapsAt100()
     Assert.Equal(100, goal.Progress);
     Assert.True(goal.Completed);  
 }
+[Fact]
+public void DisplayGoalsWithOneGoalDisplaysTitleAndProgress()
+{
+    var goals = new List<Goal> { new Goal("Read Book") { Progress = 30 } };
+
+    using var sw = new StringWriter();
+    Console.SetOut(sw);
+
+    GoalManager.DisplayGoals(goals);
+
+    var output = sw.ToString();
+    Assert.Contains("Read Book", output);
+    Assert.Contains("30%", output);
+}
 }
